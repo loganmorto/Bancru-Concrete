@@ -3,6 +3,5 @@ layout: default
 title: "Happy Jekylling!"
 ---
 
-## You're ready to go!
-
-Start developing your Jekyll website.
+<h1>Bridging Gaps with <span>Solid Slabs</span></h1>
+{{ page.title }}
