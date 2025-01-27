@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Controls how quickly the scale falls off from maxScale
       // A larger number will reduce the falloff speed (image stays larger longer).
       // A smaller number will make the image scale down more quickly as it moves away from center.
-      distanceFactor: .5,
+      distanceFactor: .4,
   
       // Transition duration in seconds
       transitionDuration: 0.3,
