@@ -8,7 +8,7 @@ permalink: /
     <span style="color: hsl(356 87 49);">Solid Slabs</span>
   </h1>
   <p class="">From commercial to residential, Bancru's concrete solutions are built to last</p>
-  <a class="get-a-quote" href="{{'/contact-us' | relative_url }} ">Get a quote<img src="{{'/assets/images/right-arrow.svg' | relative_url}}" alt=""></a>
+    {% include cta.html %}
   <div class="gradient-border-wrapper">
     <img src="{{ '/assets/images/excavators.png' | relative_url }}" alt="concrete banner image" />
     <svg class="gradient-border" xmlns="http://www.w3.org/2000/svg">
@@ -50,6 +50,7 @@ permalink: /
   {% endfor %}
 </section>
 <section class="services-section">
+    <div class="services-container">
   <img src="{{ "/assets/images/truck.svg" | relative_url}}" alt="An icon image of a dump truck">
   <div class="services">
     <div class="services-head">
@@ -58,7 +59,6 @@ permalink: /
     </div>
     <div class="service-items">
       <!-- Loop for Commercial Services -->
-      <div class="commercial-services">
         {% for service in site.data.services.commercial %}
           <div class="service-item">
             <img src="{{ service.image | relative_url }}" alt="{{ service.alt }}">
@@ -74,14 +74,17 @@ permalink: /
       </div>
       </div>
       <img src="{{'/assets/images/generated-house.webp' | relative_url }}" alt="">
+      {% include cta.html %}
     
+      <div class="services-container">
+        <img src="{{ "/assets/images/skidsteer.svg" | relative_url}}" alt="An icon image of a skidsteer">
       <div class="services">
         <div class="services-head">
             <h2>Residential</h2>
             <p>Crafting comfortable living spaces with bespoke concrete designs that blend form, function, and family.</p>
           </div>
       <!-- Loop for Residential Services -->
-      <div class="residential-services">
+      <div class="service-items">
         {% for service in site.data.services.residential %}
           <div class="service-item">
             <img src="{{ service.image | relative_url }}" alt="{{ service.alt }}">
@@ -93,6 +96,8 @@ permalink: /
             </ul>
           </div>
         {% endfor %}
+      </div>
+      </div>
       </div>
       </div>
     </div>

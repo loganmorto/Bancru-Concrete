@@ -1,16 +1,31 @@
-.services-section{
-display: flex;
-flex-direction: column;
-align-items: center;
+.services-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+}
+.services-section>img {
+    width: 100%;
 }
 
-.services-section img {
+.services-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+    gap: 2em;
+}
+
+.services-container img {
     width: 50%;
 }
 
 .services {
     padding: 1.5em;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
 .services-head {
@@ -24,6 +39,7 @@ align-items: center;
 .service-items {
     display: flex;
     flex-direction: column;
+    gap: 1.75em;
 }
 
 .service-item {
