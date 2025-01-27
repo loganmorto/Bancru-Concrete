@@ -41,9 +41,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .get-a-quote {
   padding: 1em;
-  color: hsl(356 87 49);
+  color: hsl(356, 87%, 49%);
   border: 1px solid black;
-  box-shadow: 6px 6px hsl(0 0 0);
+  box-shadow: 6px 6px black;
   text-decoration: none;
   width: fit-content;
   display: flex;
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   border-radius: 15px;
   display: inline-block;
-  box-shadow: 0px 6px 16px hsl(0 0 0 / 60%);
+  box-shadow: 0px 6px 16px hsl(0, 0%, 0% / 60%);
 }
 
 .gradient-border {
