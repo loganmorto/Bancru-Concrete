@@ -1,4 +1,20 @@
 <header>
-    <a href="{{ '/' | relative_url }}"><h1>Bancru Concrete</h1></a>
+  <div class="header-base">
+    <a class="logo" href="{{ '/' | relative_url }}">
+      <p>Bancru Concrete</p>
+    </a>
+    <div class="header-items">
+      <a href="tel:0000000000" style="display: flex;">
+        <img src="{{ '/assets/images/phone-black.svg' | relative_url }}" alt="phone icon">
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav-wrapper">
     {% include navigation.html %}
+  </div>
 </header>

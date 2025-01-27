@@ -1,10 +1,10 @@
-- name: home
+- name: Home
   link: /
 - name: Contact us
-  link: /contact-us
+  link: /contact-us/
 - name: Equipment & Capabilities
-  link: /equipment-and-capabilities
+  link: /equipment-and-capabilities/
 - name: Our Work
-  link: /our-work
+  link: /our-work/
 - name: Home Owners
-  link: /home-owners
+  link: /home-owners/
