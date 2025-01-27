@@ -27,7 +27,8 @@ nav ul {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 12px; /* Add padding to increase the tap area */
+    box-sizing: content-box; /* Ensure padding doesn't affect width/height */
 
     span {
         display: block;
