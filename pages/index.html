@@ -61,7 +61,7 @@ permalink: /
       <!-- Loop for Commercial Services -->
         {% for service in site.data.services.commercial %}
           <div class="service-item">
-            <img src="{{ service.image | relative_url }}" alt="{{ service.alt }}">
+            <img class="service-icon" src="{{ service.image | relative_url }}" alt="{{ service.alt }}">
             <h3>{{ service.title }}</h3>
             <ul>
               {% for bullet in service.bullets %}
@@ -87,7 +87,7 @@ permalink: /
       <div class="service-items">
         {% for service in site.data.services.residential %}
           <div class="service-item">
-            <img src="{{ service.image | relative_url }}" alt="{{ service.alt }}">
+            <img class="service-icon" src="{{ service.image | relative_url }}" alt="{{ service.alt }}">
             <h3>{{ service.title }}</h3>
             <ul>
               {% for bullet in service.bullets %}
@@ -101,7 +101,5 @@ permalink: /
       </div>
       </div>
     </div>
-
-
   </div>
 </section>

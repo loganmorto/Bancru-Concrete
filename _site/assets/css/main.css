@@ -234,4 +234,10 @@ header {
   font-weight: normal; }
 
 .service-bullet {
-  font-weight: 200; }
+  font-weight: 200;
+  font-size: .85em;
+  padding-top: 6px; }
+
+.services-image {
+  transition: transform 0.2s ease-out;
+  will-change: transform; }
