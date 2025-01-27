@@ -8,7 +8,7 @@ commercial:
       - "Tilt-up construction"
  
   - title: "Parking Lots and Structures"
-    image: "/assets/images/ParkingLot&Structures.svg"
+    image: "/assets/images/ParkingLotsAndStructures.svg"
     alt: "an image of a parking deck"
     bullets:
       - "Concrete parking lot paving"
@@ -16,7 +16,7 @@ commercial:
       - "Loading dock installations"
  
   - title: "Roadways and Sidewalks"
-    image: "/assets/images/RoadwaysAndSidewalks.svg"
+    image: "/assets/images/RoadsAndSidewalks.svg"
     alt: "an image of a parking deck"
     bullets:
       - "Concrete road construction"
