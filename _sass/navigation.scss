@@ -53,7 +53,8 @@ nav ul {
 .nav-wrapper.open {
     display: flex; /* Show menu when open */
     border: 1px black solid;
-    border-radius: 8px;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
 }
 
 /* Responsive Styles */
