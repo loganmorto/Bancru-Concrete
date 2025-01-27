@@ -30,7 +30,8 @@ h2 {
   padding: .5rem; }
 
 .page-heading {
-  font-size: 1em; }
+  font-size: 2em;
+  font-weight: 500; }
 
 .get-a-quote {
   padding: 1em;
