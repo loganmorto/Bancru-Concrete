@@ -1,0 +1,91 @@
+commercial:
+  - title: "Foundations and Slabs"
+    image: "/assets/images/FoundationsAndSlabs.svg"
+    alt: "an image of a foundation for an industrial building"
+    bullets:
+      - "Large-scale building foundations"
+      - "Concrete slabs for warehouses, retail spaces, and industrial facilities"
+      - "Tilt-up construction"
+ 
+  - title: "Parking Lots and Structures"
+    image: "/assets/images/ParkingLot&Structures.svg"
+    alt: "an image of a parking deck"
+    bullets:
+      - "Concrete parking lot paving"
+      - "Multi-level parking structures"
+      - "Loading dock installations"
+ 
+  - title: "Roadways and Sidewalks"
+    image: "/assets/images/RoadwaysAndSidewalks.svg"
+    alt: "an image of a parking deck"
+    bullets:
+      - "Concrete road construction"
+      - "Durable and ADA-compliant sidewalks"
+      - "Curbs and gutters"
+
+  - title: "Structural Concrete"
+    image: "/assets/images/StructuralConcrete.svg"
+    alt: "an image of structural concrete on a bridge"
+    bullets:
+      - "Columns, beams, and retaining walls"
+      - "Bridge components and infrastructure"
+ 
+  - title: "Decorative and Stamped Concrete"
+    image: "/assets/images/StampedConcrete.svg"
+    alt: "an image of stamped concrete"
+    bullets:
+      - "Decorative finishes for commercial patios, plazas, and walkways"
+      - "Stamped concrete for outdoor spaces"
+ 
+  - title: "Erosion Control and Grading"
+    image: "/assets/images/ErosionControl.svg"
+    alt: "an image of a retaining wall holding back dirt"
+    bullets:
+      - "Site preparation and grading for large projects"
+      - "Retaining walls for erosion prevention"
+
+  - title: "Repair and Maintenance"
+    image: "/assets/images/RepairMaintenance.svg"
+    alt: "an image of concrete removed, exposing a pipe"
+    bullets:
+      - "Crack and joint sealing"
+      - "Resurfacing and grinding"
+      - "Concrete demolition and removal"
+
+
+residential:
+  - title: "Driveways and Sidwalks"
+    image: "/assets/images/Driveway.svg"
+    alt: "an image of a driveway and sidewalk to a house"
+    bullets:
+      - "New driveway installations"
+      - "Sidewalk construction and repair"
+      - "Decorative borders and finishes"
+  
+  - title: "Patios and Outdoor Living Areas"
+    image: "/assets/images/Patio.svg"
+    alt: "an image of an outdoor living area with a patio and water feature"
+    bullets:
+      - "Concrete patios with custom designs"
+      - "Stamped and stained concrete for outdoor aesthetics"
+  
+  - title: "Garage and Basement Floors"
+    image: "/assets/images/Garage.svg"
+    alt: "an image of a concrete garage"
+    bullets:
+      - "Smooth and durable garage floors"
+      - "Polished or stained basement floors"
+  
+  - title: "Pool Decks and Outdoor Features"
+    image: "/assets/images/Pool.svg"
+    alt: "an image of a concrete pool"
+    bullets:
+      - "Slip-resistant and decorative pool decks"
+      - "Custom outdoor features like fire pits and seating areas"
+
+  - title: "Foundations and Slabs"
+    image: "/assets/images/Foundation.svg"
+    alt: "an image of a Poured Concrete foundation"
+    bullets:
+      - "Foundations for home additions and garages"
+      - "Concrete slabs for sheds, workshops, or other structures"

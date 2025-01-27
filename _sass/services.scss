@@ -1,0 +1,42 @@
+.services-section{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.services-section img {
+    width: 50%;
+}
+
+.services {
+    padding: 1.5em;
+    border: 1px solid black;
+}
+
+.services-head {
+    text-align: center;
+}
+.services-head p {
+    letter-spacing: .1rem;
+    font-weight: 200    ;
+}
+
+.service-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item {
+ text-align: center;
+ list-style-position: inside;
+}
+
+.service-item h3 {
+    font-weight: normal;
+}
+
+.service-bullet {
+    font-weight: 200;
+}
+  
+  

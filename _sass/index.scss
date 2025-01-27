@@ -5,3 +5,37 @@
     gap: 1.5em;
 }
 
+.text-span {
+    background-color: black;
+    width: 4px;
+    display: block;
+}
+
+.home-about-header {
+    display: flex;
+    gap: .5em;
+}
+
+.home-about-header h3 {
+    font-size: 24px;
+    font-weight: 100;
+    padding: .5rem;
+}
+
+.home-about-section {
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+}
+
+.home-about-section p {
+    font-weight: 300;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+}
+
+.home-about {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}

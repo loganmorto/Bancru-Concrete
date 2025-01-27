@@ -35,5 +35,68 @@ permalink: /
         stroke-width="5" />
     </svg>
   </div>
+</section>
+<section class="home-about">
+  {% for item in site.data.home-about %}
+    <div class="home-about-section">
+      <div class="home-about-header">
+        <span class="text-span"></span>
+        <h3>{{ item.header }}</h3>
+      </div>
+      <p>
+        {{ item.paragraph }}
+      </p>
+    </div>
+  {% endfor %}
+</section>
+<section class="services-section">
+  <img src="{{ "/assets/images/truck.svg" | relative_url}}" alt="An icon image of a dump truck">
+  <div class="services">
+    <div class="services-head">
+      <h2>Commercial</h2>
+      <p>Building business from the ground up with concrete solutions that promise progress and durability.</p>
+    </div>
+    <div class="service-items">
+      <!-- Loop for Commercial Services -->
+      <div class="commercial-services">
+        {% for service in site.data.services.commercial %}
+          <div class="service-item">
+            <img src="{{ service.image | relative_url }}" alt="{{ service.alt }}">
+            <h3>{{ service.title }}</h3>
+            <ul>
+              {% for bullet in service.bullets %}
+                <li class="service-bullet">{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+      </div>
+      </div>
+      <img src="{{'/assets/images/generated-house.webp' | relative_url }}" alt="">
+    
+      <div class="services">
+        <div class="services-head">
+            <h2>Residential</h2>
+            <p>Crafting comfortable living spaces with bespoke concrete designs that blend form, function, and family.</p>
+          </div>
+      <!-- Loop for Residential Services -->
+      <div class="residential-services">
+        {% for service in site.data.services.residential %}
+          <div class="service-item">
+            <img src="{{ service.image | relative_url }}" alt="{{ service.alt }}">
+            <h3>{{ service.title }}</h3>
+            <ul>
+              {% for bullet in service.bullets %}
+                <li class="service-bullet">{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+      </div>
+    </div>
 
+
+  </div>
 </section>

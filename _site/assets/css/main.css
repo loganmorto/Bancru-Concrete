@@ -26,6 +26,9 @@ body > header {
 h1, h2, h3, h4, h5, h6 {
   font-family: "DM mono", BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
+h2 {
+  padding: .5rem; }
+
 .page-heading {
   font-size: 2em; }
 
@@ -41,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .gradient-border-wrapper {
   position: relative;
-  border-radius: 15px;
+  border-radius: var(--border-radius, 15px);
   display: inline-block;
   box-shadow: 0px 6px 16px black; }
 
@@ -52,15 +55,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  /* Allows interactions with the image below */
-  border-radius: 15px; }
+  border-radius: var(--border-radius, 15px); }
 
 .gradient-border-wrapper img {
   display: block;
-  border-radius: 15px;
-  /* Matches the SVG's corner radius */
-  align-self: stretch;
-  flex-shrink: 0;
+  border-radius: var(--border-radius, 15px);
   width: 100%;
   position: relative;
   object-fit: cover; }
@@ -134,7 +133,8 @@ nav ul {
 
 header {
   box-shadow: 0px 1px 8px 4px rgba(0, 0, 0, 0.3);
-  padding: 0em 1em; }
+  padding: 0em 1em;
+  position: sticky; }
 
 .logo, .logo h1 {
   font-size: 24px;
@@ -154,3 +154,65 @@ header {
   flex-direction: column;
   margin: 3em 0 3em 0;
   gap: 1.5em; }
+
+.text-span {
+  background-color: black;
+  width: 4px;
+  display: block; }
+
+.home-about-header {
+  display: flex;
+  gap: .5em; }
+
+.home-about-header h3 {
+  font-size: 24px;
+  font-weight: 100;
+  padding: .5rem; }
+
+.home-about-section {
+  display: flex;
+  flex-direction: column;
+  gap: .75em; }
+
+.home-about-section p {
+  font-weight: 300;
+  letter-spacing: .1rem;
+  line-height: 2rem; }
+
+.home-about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em; }
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.services-section img {
+  width: 50%; }
+
+.services {
+  padding: 1.5em;
+  border: 1px solid black; }
+
+.services-head {
+  text-align: center; }
+
+.services-head p {
+  letter-spacing: .1rem;
+  font-weight: 200; }
+
+.service-items {
+  display: flex;
+  flex-direction: column; }
+
+.service-item {
+  text-align: center;
+  list-style-position: inside; }
+
+.service-item h3 {
+  font-weight: normal; }
+
+.service-bullet {
+  font-weight: 200; }
