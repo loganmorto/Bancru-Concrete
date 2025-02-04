@@ -1,0 +1,54 @@
+<section class="services-section">
+    <div class="services-container">
+  <img src="{{ "/assets/images/truck.svg" | relative_url}}" alt="An icon image of a dump truck">
+  <div class="services">
+    <div class="services-head">
+      <h2>Commercial</h2>
+      <p>Building business from the ground up with concrete solutions that promise progress and durability.</p>
+    </div>
+    <div class="service-items">
+      <!-- Loop for Commercial Services -->
+        {% for service in site.data.services.commercial %}
+          <div class="service-item">
+            <img class="service-icon" src="{{ service.image | relative_url }}" alt="{{ service.alt }}" loading="lazy">
+            <h3>{{ service.title }}</h3>
+            <ul>
+              {% for bullet in service.bullets %}
+                <li class="service-bullet">{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+      </div>
+      </div>
+      <img src="{{'/assets/images/generated-house.webp' | relative_url }}" alt="">
+      {% include cta.html %}
+    
+      <div class="services-container">
+        <img src="{{ "/assets/images/skidsteer.svg" | relative_url}}" alt="An icon image of a skidsteer" loading="lazy">
+      <div class="services">
+        <div class="services-head">
+            <h2>Residential</h2>
+            <p>Crafting comfortable living spaces with bespoke concrete designs that blend form, function, and family.</p>
+          </div>
+      <!-- Loop for Residential Services -->
+      <div class="service-items">
+        {% for service in site.data.services.residential %}
+          <div class="service-item">
+            <img class="service-icon" src="{{ service.image | relative_url }}" alt="{{ service.alt }}" loading="lazy">
+            <h3>{{ service.title }}</h3>
+            <ul>
+              {% for bullet in service.bullets %}
+                <li class="service-bullet">{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>

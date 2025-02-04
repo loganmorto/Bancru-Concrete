@@ -6,6 +6,7 @@
 }
 .services-section>img {
     width: 100%;
+    grid-column: 2 / span 10;
 }
 
 .services-section{
@@ -18,6 +19,8 @@
 
 .services-container img {
     width: 50%;
+    max-width: 400px;
+    grid-column: 2 / span 10;
 }
 
 .services {
@@ -26,10 +29,12 @@
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    align-items: center;
 }
 
 .services-head {
     text-align: center;
+    grid-column: span 12;
 }
 .services-head p {
     letter-spacing: .1rem;
@@ -40,11 +45,13 @@
     display: flex;
     flex-direction: column;
     gap: 1.75em;
+    grid-area: 2 / span 12;
 }
 
 .service-item {
  text-align: center;
  list-style-position: inside;
+
 }
 
 .service-item h3 {
@@ -58,10 +65,50 @@
     padding-top: 6px;
 }
 
-.services-image {
-    transition: transform 0.2s ease-out;
-    will-change: transform;
-  }
+.services-section .call-to-action {
+    grid-column: 2 / span 10;
+    justify-self: center;
+}
+
+
+@media (min-width: 768px) {
+
+    .services {
+        display: flex;
+        grid-column: span 12;
+        @include nested-grid;
+    }
+    
+    .services-container {
+        display: grid;
+        @include nested-grid;
+        grid-column: span 12;
+    }
+
+    .services-section {
+        display: grid;
+        @include nested-grid
+    }
+
+    .services-container img {
+        grid-column: span 12;
+        justify-self: center;
+    }
+    .service-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-item {
+        width: 350px;
+    }
+
+    .service-items img {
+        aspect-ratio: 1 / 1;
+    }
+
+}
   
   
   

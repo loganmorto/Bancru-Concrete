@@ -1,8 +1,9 @@
+@import "variables";
+@import "grid";
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
-$bodyFont: "DM sans",BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-$HFont: "DM mono",BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-
+$bodyFont: "DM Sans",BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$HFont: "DM Mono",BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
 /* General Styles */
 * {
@@ -16,26 +17,32 @@ a {
 }
 
 body {
-  color: #000000;
-  background-color: #ffffff;
+  color: $bodyColor;
   overflow-x: hidden;
   background-size: auto; /* Ensures the image covers the entire div */
   background-position: center; /* Centers the image */
   background: $backgroundColor;
-  color: $bodyColor;
   font-family: $bodyFont;
-  margin: 1.5em;
+  max-width: $max-width;
+  margin: 1.5em auto;
+  margin-top: 0;
+  padding: 0 20px;
+  @include grid ();
 }
 
-body > header {
-  margin: -1.5em -1.5em 0 -1.5em;
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $HFont;
+  font-weight: 500;
 }
 h2 {
   padding: .5rem;
+}
+
+section, footer {
+grid-column: span 12;
+
+
 }
 
 .page-heading {
@@ -43,7 +50,7 @@ h2 {
   font-weight: 500;
 }
 
-.get-a-quote {
+.call-to-action {
   padding: 1em;
   color: hsl(356, 87%, 49%);
   border: 1px solid black;
@@ -52,6 +59,32 @@ h2 {
   width: fit-content;
   display: flex;
   gap: .5em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+.call-to-action:hover {
+  background-color: hsl(356, 87%, 49%);
+  color: hsl(356, 0%, 100%);
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+
+.header-right .call-to-action {
+  display: none;
+  margin: .5em;
+  color: black;
+  background-color: white;
+  box-shadow: none;
+  padding: .75em;
+  border-radius: 4px;
+  text-wrap-mode: nowrap;
+}
+
+.header-right .call-to-action:hover {
+  background-color: hsl(356, 87%, 49%);
+  color: white;
 }
 
 

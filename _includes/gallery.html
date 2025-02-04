@@ -1,0 +1,10 @@
+<section class="gallery">
+  {% for item in include.gallery %}
+    <a href="{{ item.image | relative_url }}">
+      <img 
+        src="{{ item.image | relative_url }}" 
+        alt="{{ item.alt }}" 
+        loading="lazy">
+    </a>
+  {% endfor %}
+</section>

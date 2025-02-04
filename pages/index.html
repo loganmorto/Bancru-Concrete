@@ -1,16 +1,17 @@
 ---
 layout: default
-title: "Bancru Concrete"
+title: "Bancru Concrete is North Carolina's Premier Concrete Contractor"
 permalink: /
+description: "Expert concrete contracting services in North Carolina. We specialize in durable and high-quality concrete work for residential and commercial projects."
 ---
 <section class="hero">
   <h1 class="page-heading">Bridging Gaps with
-    <span style="color: hsl(356 87 49);">Solid Slabs</span>
+    <span style="color: hsl(356, 87%, 49%);">Solid Slabs</span>
   </h1>
   <p class="">From commercial to residential, Bancru's concrete solutions are built to last</p>
-    {% include cta.html %}
+  {% include cta.html %}
   <div class="gradient-border-wrapper">
-    <img src="{{ '/assets/images/excavators.png' | relative_url }}" alt="concrete banner image" />
+    <img src="{{ '/assets/images/excavators.webp' | relative_url }}" alt="concrete banner image" />
     <svg class="gradient-border" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient
@@ -41,65 +42,11 @@ permalink: /
     <div class="home-about-section">
       <div class="home-about-header">
         <span class="text-span"></span>
-        <h3>{{ item.header }}</h3>
+        <h2>{{ item.header }}</h2>
       </div>
       <p>
         {{ item.paragraph }}
       </p>
     </div>
   {% endfor %}
-</section>
-<section class="services-section">
-    <div class="services-container">
-  <img src="{{ "/assets/images/truck.svg" | relative_url}}" alt="An icon image of a dump truck">
-  <div class="services">
-    <div class="services-head">
-      <h2>Commercial</h2>
-      <p>Building business from the ground up with concrete solutions that promise progress and durability.</p>
-    </div>
-    <div class="service-items">
-      <!-- Loop for Commercial Services -->
-        {% for service in site.data.services.commercial %}
-          <div class="service-item">
-            <img class="service-icon" src="{{ service.image | relative_url }}" alt="{{ service.alt }}">
-            <h3>{{ service.title }}</h3>
-            <ul>
-              {% for bullet in service.bullets %}
-                <li class="service-bullet">{{ bullet }}</li>
-              {% endfor %}
-            </ul>
-          </div>
-        {% endfor %}
-      </div>
-      </div>
-      </div>
-      <img src="{{'/assets/images/generated-house.webp' | relative_url }}" alt="">
-      {% include cta.html %}
-    
-      <div class="services-container">
-        <img src="{{ "/assets/images/skidsteer.svg" | relative_url}}" alt="An icon image of a skidsteer">
-      <div class="services">
-        <div class="services-head">
-            <h2>Residential</h2>
-            <p>Crafting comfortable living spaces with bespoke concrete designs that blend form, function, and family.</p>
-          </div>
-      <!-- Loop for Residential Services -->
-      <div class="service-items">
-        {% for service in site.data.services.residential %}
-          <div class="service-item">
-            <img class="service-icon" src="{{ service.image | relative_url }}" alt="{{ service.alt }}">
-            <h3>{{ service.title }}</h3>
-            <ul>
-              {% for bullet in service.bullets %}
-                <li class="service-bullet">{{ bullet }}</li>
-              {% endfor %}
-            </ul>
-          </div>
-        {% endfor %}
-      </div>
-      </div>
-      </div>
-      </div>
-    </div>
-  </div>
 </section>

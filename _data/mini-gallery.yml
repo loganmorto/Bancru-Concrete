@@ -1,0 +1,8 @@
+- image: "/uploads/mini-gallery/generated-road.webp"
+  alt: "Image 1"
+- image: "/uploads/mini-gallery/generated-shop.webp"
+  alt: "Image 2"
+- image: "/uploads/mini-gallery/generated-house.webp"
+  alt: "Image 3"
+- image: "/uploads/mini-gallery/generated-stamping.webp"
+  alt: "Image 4"

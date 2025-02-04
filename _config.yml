@@ -1,3 +1,21 @@
-url: "https://loganmorto.github.io/Bancru-Concrete/" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/Bancru-Concrete" # the subpath of your site, e.g. /blog
+url: "https://bancruconcrete.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Bancru Concrete" # the name of your site, e.g. ACME Corp.
+description: "We provide expert concrete contracting services across North Carolina, from the Triangle region to Asheville."
+
+business:
+  email: "bancruconcrete@gmail.com"
+  phone: "+1 (919) 699-0897"
+
+exclude: 
+  - deploy.sh 
+
+# Ensure permalinks have trailing slashes
+permalink: /:categories/:title/
+
+# Include the 404 page
+include:
+  - pages/404.html
+
+  
+

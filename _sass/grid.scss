@@ -1,0 +1,12 @@
+@mixin grid($columns: $columns, $gap: $gutter) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    column-gap: $gap;
+  }
+  
+  // For nested grids
+  @mixin nested-grid {
+    grid-template-columns: inherit;
+    column-gap: inherit;
+  }
+  

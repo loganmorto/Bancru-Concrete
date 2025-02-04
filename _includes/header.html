@@ -1,10 +1,25 @@
+<section class="head-contacts">
+  <div class="head-contact">
+    email:
+    <a href="mailto:{{ site.business.email }}">{{ site.business.email }}</a>
+  </div>
+  {% include cta.html %}
+  <div class="head-contact">
+    phone:
+    <a href="tel:{{ site.business.phone  }}">{{ site.business.phone }}</a>
+  </div>
+</section>
 <header>
   <div class="header-base">
-    <a class="logo" href="{{ '/' | relative_url }}">
-      <p>Bancru Concrete</p>
-    </a>
-    <div class="header-items">
-      <a href="tel:0000000000" style="display: flex; padding: 10px">
+    <div class="header-left">
+      <a class="logo" href="{{ '/' | relative_url }}">
+        <p>Bancru
+          <span>Concrete</span>
+        </p>
+      </a>
+    </div>
+    <div class="header-right">
+      <a href="tel:{{ site.business.phone }}">
         <img src="{{ '/assets/images/phone-black.svg' | relative_url }}" alt="phone icon">
       </a>
       <button class="hamburger" aria-label="Toggle navigation">
@@ -12,9 +27,37 @@
         <span></span>
         <span></span>
       </button>
+      {% include cta.html %}
     </div>
   </div>
   <div class="nav-wrapper">
     {% include navigation.html %}
   </div>
 </header>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navWrapper = document.querySelector(".nav-wrapper");
+    const headerRight = document.querySelector(".header-left");
+    const header = document.querySelector("header");
+
+    function updateNavPosition() {
+        if (window.innerWidth > 768) {
+            if (!headerRight.contains(navWrapper)) {
+                headerRight.appendChild(navWrapper);
+            }
+        } else {
+            if (!Array.from(header.children).includes(navWrapper)) {
+                header.appendChild(navWrapper); // Move it back as a direct child of <header>
+            }
+        }
+    }
+
+    // Run on initial load
+    updateNavPosition();
+
+    // Run on window resize
+    window.addEventListener("resize", updateNavPosition);
+  });
+
+
+</script>
