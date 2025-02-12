@@ -413,6 +413,9 @@ nav ul {
   justify-content: center;
   pointer-events: none; }
 
+.nav-wrapper.open > * {
+  pointer-events: auto; }
+
 /* Overlay Styles */
 .menu-overlay.active {
   display: block;
