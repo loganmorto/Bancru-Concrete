@@ -411,7 +411,8 @@ nav ul {
   /* Show menu when open */
   height: calc(100vh - 54px);
   top: 100%;
-  justify-content: center; }
+  justify-content: center;
+  pointer-events: none; }
 
 /* Overlay Styles */
 .menu-overlay.active {
