@@ -396,18 +396,22 @@ nav ul {
   display: none;
   /* Hidden by default */
   flex-direction: column;
-  background-color: var(--background);
   position: absolute;
   right: 0;
   z-index: 1000; }
 
-.nav-wrapper.open {
-  display: flex;
-  /* Show menu when open */
+.nav-wrapper.open nav {
   border: 1px var(--body) solid;
   border-right: none;
   border-radius: 8px 0 0 8px;
-  top: 55px; }
+  background-color: var(--background); }
+
+.nav-wrapper.open {
+  display: flex;
+  /* Show menu when open */
+  height: calc(100vh - 54px);
+  top: 100%;
+  justify-content: center; }
 
 /* Overlay Styles */
 .menu-overlay.active {
