@@ -409,14 +409,9 @@ nav ul {
 .nav-wrapper.open {
   display: flex;
   /* Show menu when open */
-  height: calc(100vh - 54px);
   top: 100%;
   justify-content: center;
   pointer-events: none; }
-
-.nav-wrapper.open > * {
-  pointer-events: auto;
-  /* Restore clickability for child elements */ }
 
 /* Overlay Styles */
 .menu-overlay.active {
@@ -517,7 +512,7 @@ header {
   display: none;
   padding: 10px; }
 
-.logo, .logo h1 {
+.logo {
   font-size: 24px;
   color: var(--body);
   text-decoration: none;
@@ -528,7 +523,7 @@ header {
   transform: scale(1.05); }
 
 .logo p {
-  padding: .25em 0; }
+  padding: .5em 0; }
 
 .header-right {
   display: flex;
