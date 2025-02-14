@@ -66,7 +66,7 @@
 .equipment-capabilities {
   display: flex;
   flex-direction: column;
-  gap: 2em; }
+  gap: 4em; }
 
 .equipment-section > h2 {
   font-size: 1.7em;
@@ -89,7 +89,7 @@
 .equipment-section {
   display: flex;
   flex-direction: column;
-  gap: .6em;
+  gap: 1em;
   padding: 1.2em;
   background: var(--tertiary);
   border-radius: 6px;
@@ -99,17 +99,20 @@
 .equipment-content {
   display: flex;
   flex-direction: column;
-  gap: .7em; }
+  gap: 1em; }
 
 .equipment-text {
   display: flex;
   flex-direction: column;
-  gap: .5em;
+  gap: 1em;
   line-height: 2; }
 
 .equipment-text ul {
   padding-left: 1em;
   list-style-type: disc; }
+
+.equipment-text li {
+  padding: .5em 0; }
 
 .equipment-images {
   display: flex;
@@ -230,6 +233,119 @@
 .credentials-section li, .credentials-section p {
   padding: .3em 0; }
 
+.homeowners-section h2 {
+  padding: .5em 0; }
+
+.homeowners-intro > * {
+  padding-bottom: .5em; }
+
+.homeowners-process {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.why-choose-container {
+  margin-top: 2em; }
+
+@media (min-width: 768px) {
+  .why-choose-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    padding: 2em 1em; } }
+.homeowners-why-choose {
+  padding: 2em 1em; }
+
+.homeowners-process ol {
+  padding-left: 0;
+  /* Removes default padding */
+  list-style: none;
+  /* Removes default marker positioning */
+  counter-reset: step-counter;
+  /* Creates a custom counter */ }
+
+.homeowners-process ol {
+  display: flex;
+  /* Aligns the list items inline */
+  flex-direction: column;
+  /* Stacks the list items vertically */
+  gap: 1em;
+  /* Spacing between list items */
+  padding: 1em 0; }
+
+.homeowners-process ol li {
+  display: flex;
+  /* Aligns the marker and text inline */
+  flex-direction: column;
+  /* Stacks the list items vertically */
+  align-items: flex-start;
+  /* Aligns items at the top */
+  counter-increment: step-counter;
+  /* Increments the counter */
+  position: relative;
+  padding-left: 2em;
+  /* Adjust for visual alignment */ }
+
+.homeowners-process ol li::before {
+  content: counter(step-counter) ".";
+  /* Displays the counter */
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--primary, #333);
+  /* Adjust based on your theme */
+  position: absolute;
+  left: 0; }
+
+.homeowners-why-choose ul {
+  padding-left: 0;
+  /* Removes default padding */
+  list-style: none;
+  /* Removes default marker positioning */
+  counter-reset: step-counter;
+  /* Creates a custom counter */
+  display: flex;
+  /* Aligns the list items inline */
+  flex-direction: column;
+  /* Stacks the list items vertically */
+  gap: 1em;
+  /* Spacing between list items */
+  padding: 1em 0; }
+
+.homeowners-why-choose ul li {
+  display: flex;
+  /* Aligns the marker and text inline */
+  flex-direction: column;
+  /* Stacks the list items vertically */
+  align-items: flex-start;
+  /* Aligns items at the top */
+  counter-increment: step-counter;
+  /* Increments the counter */
+  position: relative;
+  padding-left: 2em;
+  /* Adjust for visual alignment */ }
+
+.homeowners-why-choose ul li::before {
+  content: "-";
+  /* Disk marker */
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--primary, #333);
+  /* Adjust based on your theme */
+  position: absolute;
+  left: 0; }
+
+.homeowners-why-choose ul li {
+  display: flex;
+  /* Aligns bullet and text inline */
+  align-items: flex-start;
+  /* Ensures bullet and text are aligned */
+  gap: 1em;
+  /* Spacing between bullet and text */
+  position: relative;
+  padding-left: 1.5em;
+  /* Adjust for visual alignment */ }
+
 /* General Styles */
 .primary-color {
   color: var(--primary); }
@@ -276,9 +392,22 @@ section, footer {
 section {
   margin-bottom: 3em; }
 
-.page-heading {
+.hero-page-heading {
   font-size: 2em;
   font-weight: 500; }
+
+.page-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 3em 0; }
+
+.page-heading h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  grid-column: span 12;
+  margin: 1em auto;
+  text-align: center; }
 
 .call-to-action {
   padding: 1em;
@@ -341,7 +470,7 @@ section {
     padding-top: 127px; } }
 @media (min-width: 891px) {
   body {
-    padding-top: 95.5px; } }
+    padding-top: 104.8px; } }
 @media (min-width: 970px) {
   body {
     padding-top: 124px; } }
